@@ -1,3 +1,5 @@
+Active code page: 65001
+
 C:\Users\misogi\Desktop>mkdir git_challenge
 
 C:\Users\misogi\Desktop>cd git_challenge
@@ -10,7 +12,7 @@ C:\Users\misogi\Desktop\git_challenge>echo "Hello_World" >> hello_world.txt
 C:\Users\misogi\Desktop\git_challenge>git add .
 
 C:\Users\misogi\Desktop\git_challenge>git commit -m "hello_world.txtを追記"
-[main (root-commit) 474a0c8] hello_world.txtを追記
+[main (root-commit) eb9ac11] hello_world.txtを追記
  1 file changed, 1 insertion(+)
  create mode 100644 hello_world.txt
 
@@ -19,24 +21,16 @@ C:\Users\misogi\Desktop\git_challenge>echo "こんにちわ、世界！" >> hell
 C:\Users\misogi\Desktop\git_challenge>git add .
 
 C:\Users\misogi\Desktop\git_challenge>git commit -m "日本語約を追記"
-[main 64cce7c] 日本語約を追記
+[main 1fdd308] 日本語約を追記
  1 file changed, 1 insertion(+)
 
-C:\Users\misogi\Desktop\git_challenge>git log
-commit 64cce7cccff7b6c81e61ff00daff10d10e5b41ea (HEAD -> main)
-Author: watanaberenzi <tender_fake@yahoo.co.jp>
-Date:   Sat May 11 14:40:02 2024 +0900
-
-    日本語約を追記
-
-commit 474a0c837b8043c27bbb795c8f27eea52c1fc890
-Author: watanaberenzi <tender_fake@yahoo.co.jp>
-Date:   Sat May 11 14:39:45 2024 +0900
-
-    hello_world.txtを追記
+C:\Users\misogi\Desktop\git_challenge>git log --oneline
+1fdd308 (HEAD -> main) 日本語約を追記
+eb9ac11 hello_world.txtを追記
 
 
 -使用コマンド-
+chcp 65001
 mkdir git_challenge
 cd git_challenge
 git init
@@ -46,4 +40,4 @@ git commit -m "hello_world.txtを追記"
 echo "こんにちわ、世界！" >> hello_world.txt
 git add .
 git commit -m "日本語約を追記"
-git log
+git log --oneline
